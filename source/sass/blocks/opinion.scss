@@ -1,0 +1,266 @@
+.opinion {
+	text-align: center;
+	width: 278px;
+	margin: 0 auto;
+	margin-bottom: 43px;
+}
+
+.opinion__title {
+	font-size: $title-size;
+	padding: 0;	
+	margin: 0;	
+	margin-bottom: 16px;
+}
+
+.opinion__frame-circle {
+	position: relative;
+	width: 59px;	
+	height: 59px;	
+	margin: 0 auto;
+	margin-bottom: 3px;	
+	border-radius: 100%;
+	overflow: hidden;	
+}
+
+.opinion__img {
+	position: absolute;
+	top: -13px;
+	left: -24px;
+}
+
+.opinion__description {
+	position: relative;
+	margin-bottom: 11px;
+}
+
+.opinion__name {
+	font-size: 13px;	
+	font-weight: bold;
+	padding: 0;	
+	margin: 0;	
+}
+
+.opinion__details {
+	font-size: 	$small-size;
+}
+
+.opinion__text {
+	width: 250px;
+	line-height: 15px;
+	padding: 0;
+	margin: 0 auto;	
+}
+
+.opinion__link {
+	font-style: italic;
+	color: $rose-btn;
+
+	&:hover {
+		color: 	$white;
+	}
+
+	&:active {
+		color: 	$rose-btn;
+		opacity: 0.3;
+	}
+}
+
+.opinion__pages {
+	position: absolute;
+	bottom: -3px;
+	right: 0;
+	color: $rose-btn;
+}
+
+.opinion__pagination {
+	width: 57px;
+	margin: 0 auto;	
+
+	.pagination__dot:not(.pagination__dot--active) {
+		background-color: $white;
+	}
+}
+
+@media (min-width: $tablet-width) {
+	.opinion {
+		position: relative;
+		width: 100%;
+		padding-top: 36px;
+		margin-bottom: 110px;	
+	}
+
+	.opinion__title {
+		position: relative;
+		font-size: 29px;	
+		margin-bottom: 20px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: -99px;
+			left: 445px;
+			width: 320px;
+            height: 141px;
+			background-image: url("../img/ribbon-tablet.png");
+			background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 5px 10px;
+            overflow: hidden;
+            transform: rotate(-5deg);
+		}
+
+	    &::after {
+			content: "";
+			position: absolute;
+			top: -99px;
+			left: 0;
+			width: 325px;
+			height: 141px;
+			background-image: url("../img/ribbon-tablet.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: 5px 10px;
+			overflow: hidden;
+			transform: rotate(5deg) scaleX(-1)
+	    }
+	}
+
+	.opinion__wrapper {
+		display: flex;	
+		width: 586px;	
+		margin: 0 auto;	
+	}
+
+	.opinion__frame-circle {
+		width: 108px;	
+		height: 108px;	
+		margin: 0;	
+		margin-top: 29px;	
+		margin-right: 24px;	
+		margin-left: 91px;	
+	}
+
+	.opinion__img {
+		top: -25px;
+		left: -48px;
+	}
+
+	.opinion__description {
+		text-align: left;
+	}
+
+	.opinion__details {
+		display: block;
+		margin-bottom: 12px;
+	}
+
+	.opinion__text {
+		width: 255px;	
+		font-size: 13px;	
+		line-height: 17px;
+	}
+
+	.opinion__pages {
+		bottom: -19px;
+		right: 	-20px;
+	}
+
+	.opinion__arrow {
+		padding: 0;	
+
+		&--back {
+			bottom: 64px;
+			left: 90px;
+		}
+		&--forward {
+			bottom: 64px;
+			right: 90px;
+		}
+	}
+}
+
+@media (min-width: $desctop-width) {
+	.opinion {
+		width: 100%;
+		padding-top: 100px;	
+		margin-bottom: 180px;
+	}
+
+	.opinion__title {
+		font-size: 42px;
+
+		&::before {
+			top: -119px;
+			left: 715px;
+			width: 650px;
+			height: 200px;
+			background-image: url("../img/ribbon-desctop.png");
+			background-position: 89px -70px;
+			transform: rotate(-4deg);
+		}
+
+		&::after {
+			top: -118px;
+			left: 3px;
+			width: 650px;
+			height: 200px;
+			background-image: url("../img/ribbon-desctop.png");
+			background-position: 89px -70px;
+			transform: rotate(4deg) scaleX(-1);
+		}
+	}
+
+	.opinion__wrapper {
+		width: 631px;
+	}
+
+	.opinion__frame-circle {
+		width: 210px;	
+		height: 210px;	
+		margin-top: 33px;	
+		margin-right: 51px;	
+		margin-left: 0;
+	}
+
+	.opinion__img {
+		top: -49px;
+		left: -92px;
+	}
+
+	.opinion__name {
+		font-size: 24px;	
+		margin-top: 27px;	
+		margin-bottom: 4px;	
+	}
+
+	.opinion__details {
+		font-size: 16px;	
+		margin-bottom: 22px;	
+	}
+
+	.opinion__text {
+		width: 355px;	
+		font-size: 17px;	
+		line-height: 25px;
+	}
+
+	.opinion__pages {
+		font-size: 	19px;
+		bottom: -27px;
+		right: -78px;
+	}
+
+	.opinion__arrow {
+		padding: 0;	
+
+		&--back {
+			bottom: 80px;
+			left: 241px;
+		}
+
+		&--forward {
+			bottom: 80px;
+			right: 249px;
+		}
+	}
+}

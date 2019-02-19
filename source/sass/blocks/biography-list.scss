@@ -1,0 +1,81 @@
+.biography-list {
+	@include list;
+}
+
+.biography-list__item {
+	&--confection {
+		margin-bottom: 14px;
+	}
+
+	&--principle {
+		margin-bottom: 13px;
+	}
+}
+
+.biography-list__title {
+	font-size: $regular-size;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 6px;
+}
+
+.biography-list__text {
+	font-size: 13px;
+	padding: 0;
+	margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+	.biography-list {
+		margin-bottom: 10px;
+	}
+
+	.biography-list__item {
+		margin-left: 1px;
+
+		&--confection {
+			width: 335px;
+            margin-bottom: 8px;
+		}
+
+		&--principle {
+			width: 380px;
+			margin-bottom: 0;
+		}
+	}
+
+	.biography-list__title {
+		font-size: 13px;
+		margin-bottom: 8px;
+	}
+}
+
+@media (min-width: $desctop-width) {
+  .biography-list {
+    margin-bottom: 20px;
+  }
+
+  .biography-list__item {
+    margin-left: 2px;
+
+    &--confection {
+    width: 530px;
+    margin-bottom: 18px;
+   }
+
+   &--principle {
+     width: 510px;
+   }
+  }
+
+  .biography-list__title {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .biography-list__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

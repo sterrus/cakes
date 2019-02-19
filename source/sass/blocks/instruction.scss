@@ -1,0 +1,96 @@
+.instruction {
+  // width: 100%;
+  background-color: $red;
+  background-image: url("../img/bg-order-mobile.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  color: $white;
+  padding-top: 28px;
+  padding-bottom: 148px;
+  margin-bottom: 36px;
+}
+
+.instruction__title {
+  font-size: $title-size;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 29px;
+}
+
+@media (min-width: $tablet-width) {
+  .instruction {
+    background-image: url("../img/bg-order-tablet.png");
+    background-position: left top;
+    padding-top: 0;
+    padding-bottom: 65px;
+    margin-bottom: 45px;
+  }
+
+  .instruction__title {
+    font-size: 28px;
+    margin-left: 66px;
+    padding-top: 44px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .instruction {
+    background-image: url("../img/bg-order-desctop.png");
+    padding-top: 112px;
+    padding-bottom: 181px;
+    padding-left: 830px;
+    margin-bottom: 81px;
+  }
+
+  .instruction__title {
+    text-align: left;
+    font-size: 41px;
+    margin-bottom: 34px;
+    margin-left: 0;
+    padding-top: 0;
+  }
+}
+
+// @media (min-width: $desctop-width) {
+//   .instruction-list {
+//     padding-left: 0;
+//   }
+
+//   .instruction-list__item {
+//     margin-left: 38px;
+//   }
+
+//   .instruction-list__title {
+//     font-size: 19px;
+//     margin-bottom: 6px;
+
+//     &--term {
+//       &::before {
+//         font-size: 65px;
+//         top: -26px;
+//         left: -42px;
+//       }
+//     }
+
+//     &--city {
+//       &::before {
+//         font-size: 65px;
+//         top: -27px;
+//         left: -49px;
+//       }
+//     }
+
+//     &--country {
+//       &::before {
+//         font-size: 65px;
+//         top: -31px;
+//         left: -49px;
+//       }
+//     }
+//   }
+
+//   .instruction-list__text {
+//     font-size: 18px;
+//   }
+// }

@@ -1,0 +1,54 @@
+.individual {
+  width: 278px;
+  margin: 0 auto;
+  margin-bottom: 39px;
+}
+
+.individual__title {
+  font-size: $title-size;
+  line-height: 28px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.individual__text {
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .individual {
+    width: 729px;
+    margin-bottom: 0;
+  }
+
+  .individual__title {
+    font-size: 28px;
+    margin-bottom: 13px;
+  }
+
+  .individual__text {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 33px;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .individual {
+    width: 1220px;
+  }
+
+  .individual__title {
+    font-size: 41px;
+    margin-bottom: 22px;
+  }
+
+  .individual__text {
+    font-size: 27px;
+    margin-bottom: 51px;
+  }
+}

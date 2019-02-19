@@ -1,0 +1,237 @@
+.advantages {
+  width: 100%;
+}
+
+.advantages__title {
+  text-align: center;
+  font-size: $title-size;
+  line-height: 33px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 6px;
+}
+.advantages__details {
+  display: block;
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.advantages__pic-wrapper  {
+  position: relative;
+  height: 171px;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -73px;
+    width: 461px;
+    height: 452px;
+    background-image: url("../img/snow.png");
+  }
+}
+
+.advantages__plate {
+  position: absolute;
+  top: 45px;
+  left: -21px;
+  width: 353px;
+  height: 353px;
+  border: 1px solid $white;
+  border-radius: 100%;
+  background-color: #f7f7f7;
+}
+
+.advantages__img {
+  &--berries {
+    display: none;
+  }
+
+  &--cake {
+    position: absolute;
+    top: 59px;
+    left: -6px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    padding-bottom: 129px;
+  }
+
+  .advantages__flex-wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages__title {
+    position: relative;
+    font-size: 28px;
+    margin-bottom: 7px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 55px;
+      left: -10px;
+      width: 47px;
+      height: 47px;
+      background-image: url("../img/icon-raspberry.png");
+      background-size: cover;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: 55px;
+      width: 56px;
+      height: 68px;
+      background-image: url("../img/icon-mint-1.png");
+      background-size: cover;
+    }
+  }
+
+  .advantages__details {
+    position: relative;
+    font-size: 20px;
+    margin-bottom: 0;
+
+     &::before {
+      content: "";
+      position: absolute;
+      top: -17px;
+      left: 160px;
+      width: 36px;
+      height: 29px;
+      background-image: url("../img/icon-cherry.png");
+      background-size: cover;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 273px;
+      left: 213px;
+      width: 94px;
+      height: 74px;
+      background-image: url("../img/icon-mint-2.png");
+      background-size: cover;
+    }
+  }
+
+  .advantages__pic-wrapper {
+    position: absolute;
+    top: 228px;
+    right: 0;
+    width: 420px;
+    height: 413px;
+    overflow: hidden;
+
+    &::before {
+      top: -2px;
+      left: 0;
+      width: 461px;
+      height: 452px;
+      background-image: url("../img/snow.png");
+    }
+  }
+
+  .advantages__plate {
+    display: none;
+  }
+
+  .advantages__img {
+    &--berries {
+      display: block;
+      margin-top: -6px;
+      margin-right: 167px;
+    }
+    &--cake {
+      position: relative;
+      top: 40px;
+      left: 58px;
+    }
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .advantages {
+    padding-bottom: 258px;
+  }
+
+  .advantages__title {
+    font-size: 40px;
+    margin-bottom: 30px;
+
+    &::before {
+      top: 68px;
+      left: -17px;
+      width: 72px;
+      height: 75px;
+      background-image: url("../img/icon-raspberry-desctop.png");
+    }
+
+    &::after {
+      top: -25px;
+      left: 98px;
+      width: 103px;
+      height: 125px;
+      background-image: url("../img/icon-mint-1-desctop.png");
+    }
+  }
+
+  .advantages__details {
+    font-size: 30px;
+
+    &::before {
+      top: -58px;
+      left: 289px;
+      width: 61px;
+      height: 53px;
+      background-image: url("../img/icon-cherry-desctop.png");
+    }
+
+    &::after {
+      top: 470px;
+      left: 389px;
+      width: 167px;
+      height: 132px;
+      background-image: url("../img/icon-mint-2-desctop.png");
+    }
+  }
+
+  .advantages__pic-wrapper {
+    top: 380px;
+    right: 0;
+    width: 840px;
+    height: 781px;
+
+    &::before {
+      top: 10px;
+      left: 74px;
+      width: 905px;
+      height: 800px;
+      background-image: url("../img/snow-desctop.png");
+      background-size: contain;
+    }
+  }
+
+  .advantages__img {
+    &--berries {
+      margin-top: -36px;
+      margin-right: 198px;
+    }
+
+   &--cake {
+      top: 80px;
+      left: 164px;
+    }
+  }
+}

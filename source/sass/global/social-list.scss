@@ -1,0 +1,18 @@
+.social-list {
+  @include list;
+}
+
+.social-list__item {
+  display: block;
+  border-radius: 50%;
+  text-align: center;
+  background-color: $white;
+}
+
+.social-list__icon {
+  fill: $rose-btn;
+
+   &--grey {
+    fill: $grey-light;
+  }
+}

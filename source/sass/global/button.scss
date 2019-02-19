@@ -1,0 +1,14 @@
+.button-rose {
+  @include btn;
+  outline: none;
+
+  &:hover {
+    font-weight: bold;
+    box-shadow: 0 3px 3px 2px $rose-shadow;
+  }
+
+  &:active {
+    font-weight: normal;
+    box-shadow: none;
+  }
+}

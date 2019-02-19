@@ -1,0 +1,154 @@
+.instruction-list {
+  @include list;
+}
+.instruction-list__item {
+  margin-left: 67px;
+  margin-right: 33px;
+
+  &--term {
+    margin-bottom: 18px;
+  }
+
+  &--city {
+    margin-bottom: 21px;
+  }
+}
+
+.instruction-list__title {
+  position: relative;
+  font-size: $regular-size;
+  padding: 0;
+  margin: 0;
+
+  &--term {
+    margin-bottom: 4px;
+
+    &::before {
+      content: "1";
+      font-size: 36px;
+      font-weight: normal;
+      position: absolute;
+      top: -17px;
+      left: -26px;
+    }
+  }
+
+  &--city {
+     margin-bottom: 3px;
+
+    &::before {
+      content: "2";
+      font-size: 36px;
+      font-weight: normal;
+      position: absolute;
+      top: -16px;
+      left: -29px;
+    }
+  }
+
+   &--country {
+     margin-bottom: 6px;
+
+    &::before {
+      content: "3";
+      font-size: 36px;
+      font-weight: normal;
+      position: absolute;
+      top: -19px;
+      left: -28px;
+    }
+  }
+}
+
+.instruction-list__text {
+  font-size: 13px;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .instruction-list {
+    padding-left: 303px;
+  }
+
+  .instruction-list__item {
+    &--term {
+      margin-bottom: 28px;
+    }
+
+    &--city {
+      margin-bottom: 29px;
+    }
+  }
+
+  .instruction-list__title {
+    &--term {
+      margin-bottom: 3px;
+
+      &::before {
+        top: -14px;
+        left: -40px;
+      }
+    }
+
+    &--city {
+      &::before {
+        top: -18px;
+        left: -40px;
+      }
+    }
+
+    &--country {
+      &::before {
+        top: -18px;
+        left: -42px;
+      }
+    }
+  }
+  .instruction-list__new-line {
+    display: block;
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .instruction-list {
+    padding-left: 0;
+  }
+
+  .instruction-list__item {
+    margin-left: 38px;
+  }
+
+  .instruction-list__title {
+    font-size: 19px;
+    margin-bottom: 6px;
+
+    &--term {
+      &::before {
+        font-size: 65px;
+        top: -26px;
+        left: -42px;
+      }
+    }
+
+    &--city {
+      &::before {
+        font-size: 65px;
+        top: -27px;
+        left: -49px;
+      }
+    }
+
+    &--country {
+      &::before {
+        font-size: 65px;
+        top: -31px;
+        left: -49px;
+      }
+    }
+  }
+
+  .instruction-list__text {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,202 @@
+.cakes-list {
+	@include list;
+	max-width: 278px;
+	margin: 0 auto;
+}
+
+.cakes-list__item {
+	position: relative;
+	height: 120px;
+	margin-bottom: 10px;
+	overflow: hidden;
+
+	&:hover {
+		opacity: .7;
+		box-shadow: 0 0 5px 2px $rose-shadow;
+	}
+
+	&:active {
+		opacity: .3;
+		box-shadow: none;
+	}
+}
+
+
+.cakes-list__img {
+
+	position: absolute;
+	
+	&--classic {
+		top: -61px;
+		left: -3px;
+	}
+
+	&--muss {
+
+		top: -89px;
+		left: -81px;
+	}
+
+	&--wedding {
+
+		top: -24px;
+		left: -21px;
+	}
+
+	&--man {
+		top: -51px;
+		left: -3px;
+	}
+
+	&--woman {
+		top: -48px;
+		left: -96px;
+	}
+
+	&--kid {
+		top: -49px;
+		left: -4px;
+	}
+}
+
+.cakes-list__description {
+	position: absolute;
+	left: 11px;
+	top: 12px;
+}
+
+.cakes-list__title {
+	font-size: $small-size;
+	color: $grey-dark;
+	padding: 0;
+	margin: 0;
+}
+
+.cakes-list__amount {
+	font-size: 11px;
+	color: $grey-cakes-list;
+}
+
+@media (min-width: $tablet-width) {
+	.cakes-list {
+		max-width: 726px;
+	}
+
+	.cakes-list__item {
+		width: 286px;
+		height: 185px;
+		box-shadow: 0 2px 1px 1px $rose-light-shadow;
+
+		&--classic,
+		&--kid {
+			width: 417px;
+			height: 388px;
+		}
+	}
+
+	.cakes-list__flex-wrapper {
+		&--row {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 10px;
+		}
+
+		&--column {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+	}
+
+	.cakes-list__img {
+		&--classic {
+			top: -11px;
+			left: -3px;
+		}
+
+		&--muss {
+			top: -34px;
+			left: -3px;
+		}
+
+		&--wedding {
+			top: -9px;
+			left: -119px;
+		}
+
+		&--man {
+			top: -19px;
+			left: -24px;
+		}
+
+		&--woman {
+			top: -35px;
+			left: -107px;
+		}
+
+		&--kid {
+			top: -20px;
+			left: -43px;
+		}
+	}
+
+	.cakes-list__descriprion {
+		left: 25px;
+		top: 21px;
+	}
+}
+
+@media (min-width: $desctop-width) {
+	.cakes-list {
+		max-width: 100%;
+	}
+
+	.cakes-list__item {
+		width: 485px;
+		height: 305px;
+
+		&--classic,
+		&--kid {
+			width: 695px;
+			height: 652px;
+		}
+	}
+
+	.cakes-list__flex-wrapper {
+		&--row {
+			margin-bottom: 36px;
+		}
+	}
+
+	.cakes-list__img {
+		&--classic {
+			top: -47px;
+			left: -6px;
+		}
+
+		&--muss {
+			top: -80px;
+			left: -168px;
+		}
+
+		&--wedding {
+			top: -3px;
+			left: -206px;
+		}
+
+		&--man {
+			top: -48px;
+			left: -77px;
+		}
+
+		&--woman {
+			top: -58px;
+			left: -196px;
+		}
+
+		&--kid {
+			top: -29px;
+			left: -91px;
+		}
+	}
+}

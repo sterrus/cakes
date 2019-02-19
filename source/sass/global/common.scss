@@ -1,0 +1,32 @@
+body {
+	font-family: "Playfair Display", "Arial", sans-serif;
+	font-size: $regular-size;
+	color: $black;
+	background-color: $grey;
+	min-width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+	body {
+		min-width: $tablet-width;
+	}
+}
+
+@media (min-width: $desctop-width) {
+	body {
+		min-width: $desctop-width;
+	}
+}
+
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}

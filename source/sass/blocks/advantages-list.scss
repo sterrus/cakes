@@ -1,0 +1,142 @@
+.advantages-list {
+  @include list;
+
+  text-align: center;
+  background-color: $white;
+  padding-top: 84px;
+  padding-bottom: 14px;
+  margin-bottom: 33px;
+}
+.advantages-list__item {
+  position: relative;
+
+  &--ingredients {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -73px;
+      left: 130px;
+      width: 61px;
+      height: 61px;
+      background-image: url("../img/icon-ingredient-big.png");
+    }
+  }
+
+  &--fresh {
+    padding-top: 71px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: 118px;
+      width: 84px;
+      height: 50px;
+      background-image: url("../img/icon-24.png");
+    }
+  }
+}
+
+.advantages-list__title {
+  font-size: 13px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.advantages-list__text {
+  padding: 0;
+  margin: 0;
+
+  &--ingredients {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  &--fresh {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages-list {
+    background-color: $rose-bg;
+    width: 285px;
+    text-align: left;
+    padding-top: 62px;
+    margin-bottom: 10px;
+  }
+
+  .advantages-list__text {
+    &--ingredients {
+      padding: 0;
+    }
+
+     &--fresh {
+      padding: 0;
+    }
+  }
+
+   .advantages-list__item {
+    &--ingredients {
+      &::before {
+        top: 2px;
+        left: -71px;
+        width: 48px;
+        height: 48px;
+        background-image: url("../img/icon-ingredient-tablet.png");
+        background-repeat: no-repeat;
+      }
+    }
+
+    &--fresh {
+      padding-top: 12px;
+
+      &::before {
+        top: 18px;
+        left: -80px;
+        width: 63px;
+        height: 38px;
+        background-image: url("../img/icon-24-tablet.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .advantages-list {
+    padding-top: 129px;
+    margin-right: 100px;
+  }
+
+  .advantages-list__item {
+    font-size: 17px;
+
+    &--ingredients {
+      width: 400px;
+      margin-bottom: 27px;
+
+      &::before {
+        top: 12px;
+        left: -81px;
+        width: 61px;
+        height: 61px;
+        background-image: url("../img/icon-ingredient-desctop.png");
+      }
+    }
+
+    &--fresh {
+      &::before {
+        background-image: none;
+      }
+    }
+  }
+
+  .advantages-list__title {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+}

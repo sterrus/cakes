@@ -1,0 +1,887 @@
+.make-cake-list {
+  @include list;
+}
+
+.make-cake-list__item {
+  position: relative;
+  background-color: $white;
+  padding-top: 2px;
+  padding-bottom: 26px;
+  margin-bottom: 10px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &:nth-of-type(2) {
+    padding-top: 1px;
+  }
+}
+
+.make-cake-list__stage {
+  font-size: 16px;
+  line-height: 10px;
+  font-weight: bold;
+  color: $rose-btn;
+  margin-bottom: 21px;
+  margin-left: 18px;
+}
+
+.make-cake-list__number {
+  font-size: 30px;
+  margin-right: 11px;
+}
+
+.make-cake-list__flex-wrapper {
+  &--topping {
+    position: relative;
+  }
+}
+
+.make-cake-list__frame {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+
+  &--filling {
+   width: 241px;
+   height: 114px;
+   background-color: $rose-bg;
+   margin-bottom: 10px;
+}
+
+  &--marshmellow {
+    width: 170px;
+    height: 204px;
+    margin-bottom: 11px;
+    box-shadow: 0 0 3px 2px $rose-bg;
+  }
+
+  &--berries {
+    display: none;
+  }
+}
+
+.make-cake-list__img {
+  position: absolute;
+
+  &--filling {
+    bottom: -25px;
+    left: -1px;
+  }
+
+  &--marshmellow {
+    bottom: -72px;
+    left: -13px;
+  }
+}
+
+.make-cake-list__description {
+  position: absolute;
+
+  &--berries {
+    display: none;
+  }
+
+  &--marshmellow {
+    top: 223px;
+    left: 90px;
+  }
+}
+
+.make-cake-list__page {
+  position: absolute;
+
+  &--filling {
+    color: $white;
+    top: 145px;
+    right: 25px;
+  }
+
+  &--topping {
+    color: $black;
+    top: 181px;
+    left: 196px;
+  }
+}
+
+.make-cake-list__title {
+  font-size: 13px;
+  padding: 0;
+  margin: 0;
+
+  &--filling {
+    margin-top: 19px;
+    margin-bottom: 5px;
+    margin-left: 18px;
+  }
+
+  &--topping {
+    text-align: center;
+    margin-top: 14px;
+    margin-bottom: 3px;
+  }
+}
+
+.make-cake-list__weight {
+  &--one {
+    .make-cake-list__text--kilo {
+      &::after {
+        content: "";
+        position: absolute;
+        top: -44px;
+        right: 85px;
+        width: 110px;
+        height: 110px;
+        background-image: url("../img/diametr-1kg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+
+  &--two {
+    display: none;
+
+    .make-cake-list__text--kilo {
+      &::after {
+        content: "";
+        position: absolute;
+        top: -44px;
+        right: 75px;
+        background-image: url("../img/diametr-2kg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+
+  &--five {
+    display: none;
+
+    .make-cake-list__text--kilo {
+      &::after {
+        content: "";
+        position: absolute;
+        top: -44px;
+        right: 75px;
+        background-image: url("../img/diametr-5kg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+
+  &--eight {
+    display: none;
+
+    .make-cake-list__text--kilo {
+      &::after {
+        content: "";
+        position: absolute;
+        top: -44px;
+        right: 75px;
+        background-image: url("../img/diametr-8kg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}
+
+.make-cake-list__text {
+  line-height: 17px;
+  padding: 0;
+  margin: 0;
+
+  &--filling {
+    margin-left: 18px;
+    margin-bottom: 12px;
+  }
+
+  &--diameter {
+    font-weight: bold;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 13px;
+    margin-bottom: 57px;
+  }
+
+  &--kilo {
+    position: relative;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 96px;
+    margin-bottom: 116px;
+  }
+}
+
+.make-cake-list__new-line {
+  display: block;
+}
+
+.make-cake-list__price {
+  display: block;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: bold;
+
+  &--filling {
+    width: 103px;
+    margin-bottom: 21px;
+  }
+
+  &--topping {
+    width: 94px;
+    margin-bottom: 28px;
+  }
+}
+
+.make-cake-list__pagination {
+  margin: 0 auto;
+
+  &--full {
+    width: 57px;
+  }
+
+  &--short {
+    position: absolute;
+    bottom: 181px;
+    left: 118px;
+    width: 44px;
+  }
+}
+
+.make-cake-list__button {
+  display: block;
+  width: 180px;
+  margin: 0 auto;
+
+  &--topping {
+    margin-top: 86px;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .make-cake-list__item {
+    margin-bottom: 20px;
+    box-shadow: 0 2px 1px 1px $rose-light-shadow;
+
+    &--filling {
+      position: relative;
+      display: flex;
+      padding-bottom: 46px;
+
+      .make-cake-list__arrow {
+        &--back {
+          top: 147px;
+          left: 90px;
+        }
+
+        &--forward {
+          top: 147px;
+          right: 50px;
+        }
+      }
+    }
+
+    &--weight {
+      padding-bottom: 13px;
+    }
+
+    &--topping {
+      position: relative;
+      display: flex;
+      padding-bottom: 23px;
+
+      .make-cake-list__arrow {
+        &--back {
+          top: 150px;
+          left: 150px;
+        }
+
+        &--forward {
+          top: 150px;
+          right: 25px;
+        }
+      }
+    }
+  }
+
+   .make-cake-list__stage {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    line-height: 18px;
+    width: 90px;
+    margin-left: 46px;
+
+    &--filling {
+      margin-top: 37px;
+      margin-right: 39px;
+    }
+
+    &--weight {
+      margin-top: 42px;
+      margin-bottom: 0;
+    }
+
+    &--topping {
+      position: relative;
+      margin-top: 37px;
+      margin-right: 80px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 83px;
+        left: -42px;
+        width: 119px;
+        height: 157px;
+        background-image: url("../img/icon-cake-tablet.png");
+      }
+    }
+  }
+
+   .make-cake-list__number {
+      font-size: 36px;
+      margin-bottom: 14px;
+
+      &--topping {
+        margin-bottom: 17px;
+      }
+    }
+
+    .make-cake-list__frame {
+      &--filling {
+        width: 209px;
+        height: 238px;
+        margin-top: 52px;
+        margin-left: 0;
+        margin-right: 26px;
+      }
+
+      &--berries {
+        display: block;
+        width: 198px;
+        height: 263px;
+        box-shadow: 0 4px 10px -1px $grey-light;
+        margin-right: 25px;
+
+
+        &--marshmellow {
+          width: 198px;
+          height: 262px;
+          box-shadow: 0 4px 10px -1px $grey-light;
+        }
+      }
+
+      .make-cake-list__flex-wrapper {
+        &--filling {
+          width: 205px;
+          margin-top: 54px;
+        }
+
+        &--weight {
+          display: flex;
+          width: 595px;
+          margin: 0 auto;
+        }
+
+        &--topping {
+          display: flex;
+          margin-top: 40px;
+        }
+      }
+
+      .make-cake-list__weight {
+        display: block;
+
+        &--one {
+          margin-top: 44px;
+          margin-right: 45px;
+          cursor: pointer;
+
+          .make-cake-list__text--kilo {
+            width: 85px;
+            height: 85px;
+            padding-top: 34px;
+            margin-bottom: 15px;
+            border-radius: 50%;
+
+            &::after {
+              width: 77px;
+              height: 77px;
+              top: 4px;
+              right: 4px;
+            }
+          }
+        }
+
+        &--two {
+          margin-top: 6px;
+          margin-right: 51px;
+          width: 90px;
+
+          .make-cake-list__text--kilo {
+            width: 125px;
+            height: 125px;
+            margin-bottom: 10px;
+            padding-top: 54px;
+            border-radius: 50%;
+
+            &::after {
+              top: 9px;
+              right: 9px;
+              width: 107px;
+              height: 107px;
+            }
+          }
+        }
+
+        &--five {
+          margin-top: -4px;
+          margin-right: 36px;
+
+          .make-cake-list__text--kilo {
+            width: 137px;
+            height: 137px;
+            padding-top: 58px;
+            margin-bottom: 11px;
+            border-radius: 50%;
+
+            &::after {
+              top: 7px;
+              right: 8px;
+              width: 120px;
+              height: 122px;
+            }
+          }
+        }
+
+         &--eight {
+          margin-top: -22px;
+
+          .make-cake-list__text--kilo {
+            width: 154px;
+            height: 154px;
+            padding-top: 67px;
+            margin-bottom: 11px;
+            border-radius: 50%;
+
+            &::after {
+              top: 6px;
+              right: 7px;
+              width: 139px;
+              height: 141px;
+            }
+          }
+        }
+      }
+
+      .make-cake-list__img {
+        &--filling {
+          bottom: -12px;
+          left: -22px;
+        }
+
+        &--berries {
+          top: -55px;
+          left: -17px;
+        }
+
+        &--marshmellow {
+          top: -40px;
+          left: -22px;
+        }
+      }
+
+      .make-cake-list__description {
+        &--berries {
+          display: block;
+          top: 192px;
+          left: 50px;
+        }
+
+        &--marshmellow {
+          top: 192px;
+          left: 275px;
+        }
+      }
+
+      .make-cake-list__page {
+        &--filling {
+          color: $black;
+          top: 276px;
+          right: 67px;
+        }
+
+        &--topping {
+          top: 246px;
+          left: 458px;
+        }
+      }
+
+      .make-cake-list__title {
+        &--filling {
+          font-size: 15px;
+          margin-bottom: 4px;
+          margin-left: 0;
+        }
+      }
+
+      .make-cake-list__text {
+        &--filling {
+          font-size: 13px;
+          margin-bottom: 6px;
+          margin-left: 0;
+        }
+
+        &--kilo {
+          font-size: 11px;
+          margin-top: 0;
+        }
+
+        &:hover {
+          box-shadow: 0 4px 10px -1px $grey-light;
+        }
+      }
+
+      &--diameter {
+        font-size: 11px;
+        line-height: 20px;
+        text-align: left;
+        margin-left: 3px;
+      }
+    }
+
+  .make-cake-list__price {
+    &--filling {
+      width: 120px;
+      font-size: 20px;
+      margin-bottom: 25px;
+      margin-left: 0;
+    }
+
+    &--topping {
+      text-align: center;
+      font-size: 14px;
+    }
+  }
+
+  .make-cake-list__button  {
+    width: 135px;
+    height: 43px;
+    margin-left: 1px;
+
+    &--weight {
+      display: none;
+    }
+
+    &--topping {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .make-cake-list__item {
+    margin-bottom: 35px;
+
+    &--filling {
+      padding-left: 0;
+      padding-bottom: 82px;
+
+      .make-cake-list__arrow {
+        &--back {
+          top: 262px;
+          left: 180px;
+        }
+
+        &--forward {
+          top: 262px;
+          right: 110px;
+        }
+      }
+    }
+
+    &--weight {
+      padding-bottom: 85px;
+    }
+
+    &--topping {
+      padding-bottom: 53px;
+
+      .make-cake-list__arrow {
+        &--back {
+          top: 262px;
+          left: 275px;
+        }
+
+        &--forward {
+          top: 262px;
+          right: 70px;
+        }
+      }
+    }
+  }
+
+  .make-cake-list__stage {
+    font-size: 26px;
+    line-height: 29px;
+    margin-left: 82px;
+
+    &--filling {
+      margin-top: 65px;
+      margin-right: 124px;
+    }
+
+    &--weight {
+      margin-top: 68px;
+    }
+
+    &--topping {
+      margin-top: 60px;
+      margin-right: 198px;
+
+      &::after {
+        top: 137px;
+        left: -65px;
+        width: 235px;
+        height: 300px;
+        background-image: url("../img/icon-cake-desctop.png");
+      }
+    }
+  }
+
+  .make-cake-list__number {
+    font-size: 58px;
+
+    &--filling {
+      margin-bottom: 22px;
+    }
+
+    &--weight {
+      font-size: 60px;
+      margin-bottom: 24px;
+    }
+
+    &--topping {
+      font-size: 63px;
+      margin-bottom: 60px;
+    }
+  }
+
+  .make-cake-list__frame {
+    &--filling {
+      width: 343px;
+      height: 391px;
+      margin-top: 86px;
+    }
+
+    &--berries {
+      width: 322px;
+      height: 437px;
+      margin-right: 39px;
+    }
+
+    &--marshmellow {
+      width: 322px;
+      height: 437px;
+    }
+  }
+
+  .make-cake-list__img {
+    &--filling {
+      bottom: -21px;
+      left: -37px;
+    }
+
+    &--berries {
+      top: -110px;
+      left: -32px;
+    }
+
+    &--marshmellow {
+      top: 0;
+      left: -5px;
+    }
+  }
+
+  .make-cake-list__flex-wrapper {
+    &--filling {
+      width: 290px;
+      margin-top: 134px;
+      margin-left: 16px;
+    }
+
+    &--weight {
+      margin-left: 193px;
+    }
+
+    &--topping {
+      margin-top: 57px;
+    }
+  }
+
+  .make-cake-list__title {
+    &--filling {
+      font-size: 17px;
+      margin-bottom: 5px;
+    }
+
+    &--topping {
+      font-size: 19px;
+      margin-bottom: 0;
+    }
+  }
+
+  .make-cake-list__text {
+    &--filling {
+      font-size: 15px;
+      line-height: 24px;
+      margin-bottom: 16px;
+    }
+
+    &--kilo {
+      font-size: 19px;
+    }
+  }
+
+  .make-cake-list__price {
+    &--filling {
+      font-size: 21px;
+      margin-bottom: 49px;
+    }
+
+    &--topping {
+      width: 110px;
+      font-size: 21px;
+    }
+  }
+
+  .make-cake-list__button {
+    &--filling {
+      width: 180px;
+      height: 51px;
+    }
+  }
+
+  .make-cake-list__page {
+    &--filling {
+      font-size: 20px;
+      top: 455px;
+      right: 125px;
+    }
+
+    &--topping {
+      font-size: 20px;
+      top: 414px;
+      left: 750px;
+    }
+  }
+
+  .make-cake-list__weight {
+    width: 110px;
+
+    &--one {
+      margin-top: 95px;
+      margin-right: 82px;
+
+      .make-cake-list__text--kilo {
+        display: block;
+        margin-bottom: 38px;
+        margin-left: 10px;
+
+        &::after {
+          top: -14px;
+          right: -12px;
+          width: 110px;
+          height: 110px;
+          background-image: url("../img/diametr-1kg-desctop.png");
+        }
+      }
+    }
+
+    &--two {
+      margin-top: 45px;
+      margin-right: 90px;
+
+      .make-cake-list__text--kilo {
+        display: block;
+        margin: 45px;
+
+        &::after {
+          width: 154px;
+          height: 154px;
+          top: -11px;
+          right: -12px;
+          background-image: url("../img/diametr-2kg-desctop.png");
+        }
+      }
+    }
+
+    &--five {
+      width: 173px;
+      margin-top: 36px;
+      margin-right: 70px;
+
+      .make-cake-list__text--kilo {
+        display: block;
+        margin-left: 20px;
+        margin-bottom: 42px;
+
+        &::after {
+          width: 172px;
+          height: 174px;
+          top: -19px;
+          top: -16px;
+          background-image: url("../img/diametr-5kg-desctop.png");
+        }
+      }
+    }
+
+     &--eight {
+      width: 202px;
+      margin-top: 14px;
+
+      .make-cake-list__text--kilo {
+        display: block;
+        margin-left: 23px;
+        margin-bottom: 48px;
+
+        &::after {
+          width: 199px;
+          height: 202px;
+          top: -25px;
+          right: -26px;
+          background-image: url("../img/diametr-8kg-desctop.png");
+        }
+      }
+    }
+  }
+
+  .make-cake-list__text {
+    &--diametr {
+      font-size: 19px;
+      line-height: 30px;
+      width: 220px;
+    }
+  }
+
+  .make-cake-list__description {
+    &--berries {
+      top: 340px;
+      left: 88px;
+    }
+
+    &--marshmellow {
+      top: 340px;
+      left: 465px;
+    }
+  }
+}

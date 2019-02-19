@@ -1,0 +1,40 @@
+@mixin list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+// @mixin visualli-hidden {
+//   position: absolute;
+//   width: 1px;
+//   height: 1px;
+//   margin: -1px;
+//   border: 0;
+//   padding: 0;
+//   white-space: nowrap;
+//   clip-path: inset(100%);
+//   clip: rect(0 0 0 0);
+//   overflow: hidden;
+// }
+
+// @mixin font-title {
+//   font-size: 18px;
+//   line-height: 26px;
+//   font-weight: 700;
+// }
+
+// @mixin font-title-max {
+//   font-size: 21px;
+//   line-height: 26px;
+//   font-weight: 700;
+// }
+
+@mixin btn {
+  height: 51px;
+  background-color: $rose-btn;
+  color: $white;
+  font-size: 13px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 50px;
+}

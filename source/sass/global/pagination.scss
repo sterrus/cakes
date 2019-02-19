@@ -1,0 +1,30 @@
+.pagination {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.pagination__dot {
+	width: 6px;
+	height: 6px;
+	border-radius: 100%;
+	background-color: $grey-light;
+	margin-right: 5px;
+
+	&--active {
+		width: 8px;
+		height: 8px;
+		background-color: $rose-btn;
+	}
+
+	&--last {
+		width: 4px;
+		height: 4px;
+	}
+}
+
+@media (min-width: $tablet-width) {
+  .pagination {
+    display: none;
+  }
+}

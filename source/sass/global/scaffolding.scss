@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Playfair Display";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/playfairdisplayreg.woff2") format("woff2"),
+    url("../fonts/playfairdisplayreg.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/playfairdisplaybold.woff2") format("woff2"),
+    url("../fonts/playfairdisplaybold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+  src: url("../fonts/playfairdisplayit.woff2") format("woff2"),
+    url("../fonts/playfairdisplayit.woff") format("woff");
+}
+
+
+// .visually-hidden:not(:focus):not(:active) {
+//   position: absolute;
+
+//   width: 1px;
+//   height: 1px;
+//   margin: -1px;
+//   border: 0;
+//   padding: 0;
+//   white-space: nowrap;
+//   clip-path: inset(100%);
+//   clip: rect(0 0 0 0);
+//   overflow: hidden;
+// }
+
+// h2, span, p, b {
+//   margin: 0;
+// }
+
+
+
+
+// @media (min-width: 1200px) {
+//   body {
+//     min-width: 1200px;
+//   }
+// }

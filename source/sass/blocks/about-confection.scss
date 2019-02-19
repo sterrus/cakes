@@ -1,0 +1,114 @@
+.about-confection {
+  width: 100%;
+}
+.about-confection__title {
+  font-size: italic;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  margin-top: 12px;
+  margin-bottom: 6px;
+}
+
+.about-confection__text {
+  font-size: $small-size;
+  padding: 0;
+  margin: 0;
+
+  &--quotation {
+    position: relative;
+    font-size: $regular-size;
+    line-height: 16px;
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    padding-bottom: 50px;
+
+    &::after {
+      content: "";
+      width: 65px;
+      height: 31px;
+      position: absolute;
+      bottom: 1px;
+      left: 104px;
+      background-image: url("../img/signature.png");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.about-confection__marks {
+  display: block;
+  width: 40px;
+  height: 20px;
+  font-size: 74px;
+  color: $white;
+  margin: 0 auto;
+  margin-bottom: 38px;
+}
+
+@media (min-width: $tablet-width) {
+  .about-confection__title {
+    font-size: 21px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+  }
+
+  .about-confection__marks {
+    font-size: 95px;
+    line-height: 40px;
+    margin-bottom: 9px;
+  }
+
+  .about-confection__quotation{
+    width: 360px;
+    margin: 0 auto;
+  }
+
+  .about-confection__text {
+    &--quotation {
+      font-size: 15px;
+      line-height: 21px;
+
+      &::after {
+        width: 85px;
+        height: 40px;
+        top: 87px;
+        left: 139px;
+        background-image: url("../img/signature-tablet.png");
+      }
+    }
+  }
+}
+
+@media (min-width: $desctop-width) {
+  .about-confection__title {
+    font-size: 26px;
+    margin-bottom: 9px;
+  }
+
+  .about-confection__marks {
+    width: 68px;
+    font-size: 165px;
+    margin-bottom: 23px;
+  }
+
+  .about-confection__quotation {
+    width: 615px;
+  }
+
+  .about-confection__text {
+    &--quotation{
+      font-size: 27px;
+      line-height: 36px;
+
+      &::after {
+        width: 150px;
+        height: 80px;
+        top: 155px;
+        left: 234px;
+        background-image: url("../img/signature-desctop.png");
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.cakes-catalog {
+	background-color: $rose-bg;
+	margin-bottom: 47px;
+}
+
+.cakes-catalog__title {
+	font-size: $title-size;
+	line-height: 66px;
+	text-align: center;
+	color: $grey-dark;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 12px;
+}
+
+@media (min-width: $tablet-width) {
+	.cakes-catalog {
+		max-width: 726px; 
+		margin: 0 auto;
+		margin-bottom: 48px;
+	}
+
+	.cakes-catalog__title {
+		text-align: left; 
+		font-size: 28px;
+		margin-bottom: 20px;
+	}
+}
+
+@media (min-width: $desctop-width) {
+	.cakes-catalog {
+		max-width: 1222px;
+		margin-bottom: 95px;
+	}
+
+	.cakes-catalog__title {
+		font-size: 41px;
+		margin-bottom: 54px;
+	}
+}
